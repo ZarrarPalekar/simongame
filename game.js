@@ -58,6 +58,7 @@ $(document).on("keydown", function() {
 $(".btn_start").on("click", function() {
   if (isStarted === false) {
     isStarted = true;
+    $(this).hide();
     setTimeout(function() {
       nextSequence();
     }, 1000);
@@ -103,4 +104,5 @@ function startOver() {
   level = 0;
   gamePattern = [];
   isStarted = false;
+  $(".btn_start").show();
 }

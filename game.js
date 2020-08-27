@@ -55,6 +55,15 @@ $(document).on("keydown", function() {
   }
 })
 
+$(".btn_start").on("click", function() {
+  if (isStarted === false) {
+    isStarted = true;
+    setTimeout(function() {
+      nextSequence();
+    }, 1000);
+  }
+})
+
 function checkAnswer(currentLevel) {
 
   //3. Write an if statement inside checkAnswer() to check if the most recent user answer is the same as the game pattern. If so then log "success", otherwise log "wrong".

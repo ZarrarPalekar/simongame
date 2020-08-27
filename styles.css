@@ -57,3 +57,34 @@ body {
   box-shadow: 0 0 20px white;
   background-color: grey;
 }
+
+.btn_start {
+  margin: 25px;
+  display: inline-block;
+  height: 50px;
+  width: 150px;
+  border: 10px solid black;
+  border-radius: 20%;
+}
+
+@media (min-width: 1024px) {
+  .btn_start {
+    margin: 25px;
+    display: none;
+    height: 50px;
+    width: 150px;
+    border: 10px solid black;
+    border-radius: 20%;
+  }
+}
+
+@media (max-width: 414px) {
+  .btn_start {
+    margin: 25px;
+    display: inline-block;
+    height: 50px;
+    width: 150px;
+    border: 10px solid black;
+    border-radius: 20%;
+  }
+}
